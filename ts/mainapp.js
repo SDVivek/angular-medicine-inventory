@@ -1,0 +1,41 @@
+"use strict";
+class medicineItem {
+    name;
+    stock;
+    price;
+    constructor(name, stock, price) {
+        this.name = name;
+        this.stock = stock;
+        this.price = price;
+    }
+    getvalue() {
+        return this.price * this.stock;
+    }
+}
+console.log("fdsf");
+// function calculateTotal1(
+//     firstnumer: number,
+//     secondnumber: number): number{
+//     return firstnumer + secondnumber;
+// }
+// console.log(calculateTotal1(5,23));
+function calculateTotal(price, quantity) {
+    return price * quantity;
+}
+const total = calculateTotal(30, 4);
+console.log(total); // 120
+const first = {
+    id: 1,
+    name: "vivek",
+    stock: 4,
+    batchNumber: "fdf"
+};
+console.log(first.name);
+const second = {
+    id: 2,
+    name: "bhide",
+    stock: 3
+};
+console.log(second.stock);
+const item = new medicineItem("Paracetamol", 100, 50);
+console.log(item.getvalue());
